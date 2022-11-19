@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --swiper-theme-color: #000000;
+}
+
+@layer components {
+  section {
+    @apply py-6 px-12;
+  }
+  input, textarea {
+    @apply outline-none resize-none py-2 px-4 text-black;
+  }
+}
