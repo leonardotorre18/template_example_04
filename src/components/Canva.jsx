@@ -6,7 +6,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { useState } from 'react';
 
 export default function Canva() {
-  const gltf = useLoader(GLTFLoader, '/phone.gltf');
+  const gltf = useLoader(GLTFLoader, '/template_example_04/phone.gltf');
   const [speed, setSpeed] = useState(5);
   const speedFast = () => {
     setSpeed(30);
@@ -16,7 +16,7 @@ export default function Canva() {
   }
   return (
     <div
-      className="h-full w-full"
+      className="h-[400px] md:h-full w-full "
     >
       <Canvas>
         <mesh
